@@ -1,0 +1,11 @@
+body[data-theme=light] {
+    background-color: #fff;
+    color: black;
+    transition: background-color 1050ms ease-in-out;
+  }
+  
+  body[data-theme=dark] {
+    background: linear-gradient(90deg, rgb(22, 22, 26) 0%, rgb(4, 4, 40) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    transition: background-color 1050ms ease-in-out;
+  }
