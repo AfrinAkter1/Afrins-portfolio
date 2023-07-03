@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
     return (
-        <div>
+        <div id="contact">
 
             <h3 className="text-orange-800 text-center font-bold text-3xl my-5">Contact With Me</h3>
             <div className="hero  ">
@@ -53,7 +53,7 @@ const Contact = () => {
           <label className="label">
             <span className="label-text font-bold">Your Name</span>
           </label>
-          <input  onChange={handleInputChange} type="text" name="name" placeholder="Your Name" className="input input-bordered" />
+          <input onChange={handleInputChange} type="text" name="name" placeholder="Your Name" className="input input-bordered" />
         </div>
         <div className="form-control">
           <label className="label">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Projects.css'
 const Projects = () => {
     return (
-        <div className='grid grid-cols-3 gap-10'>
+        <div id='projects' className='grid lg:grid-cols-3 lg:gap-10'>
             <div className="container">
 
        

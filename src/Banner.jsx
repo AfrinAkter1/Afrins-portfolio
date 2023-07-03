@@ -1,10 +1,12 @@
 import { BiLogoFacebookCircle, BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
-
+<script>
+AOS.init();
+</script>
 const Banner = () => {
     return (
-        <div className="mx-16 md:flex gap-9 ">
+        <div id='wellcome' className="mx-16 lg:flex gap-9 w-full">
             <div>
                 <img className="h-80 rounded  shadow-lg shadow-gray-600" src="https://i.ibb.co/mbZgTnw/IMG-20230424-WA0052-1.jpg" alt="" />
             </div>
@@ -27,7 +29,7 @@ const Banner = () => {
       className='text-orange-700'
       repeat={Infinity}
     />
-            <p className='my-10 '>I have a strong set of technical skills, a problem-solving mindset, great teamwork abilities, a love for learning, keen attention to detail, and a strong commitment to my work.</p>
+            <p className='my-10 '>I have a strong set of technical skills, <br /> a problem-solving mindset, great teamwork abilities, <br /> a love for learning, keen attention to detail, <br /> and a strong commitment to my work.</p>
             <p className='text-slate-300'>FIND WITH ME</p>
             <ul className='flex text-3xl space-x-3 my-5 text-white'>
                 <li className='bg-orange-800 shadow-lg shadow-gray-500 rounded-full p-1'>

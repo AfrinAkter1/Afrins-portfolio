@@ -1,10 +1,12 @@
 
 
+
 const Skills = () => {
     return (
-        <div>
+        <div id="skills">
+           
             <h3 className="text-orange-600 text-3xl font-bold text-center my-10">Skills</h3>
-            <div className="grid grid-cols-4 gap-10">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-2  gap-10">
                 <div>
                     <img className="w-24 h-24 rounded hover:shadow-md hover:shadow-slate-400" src="https://i.ibb.co/4Y2VFRN/html.png" alt="" />
                     <p>HTML</p>

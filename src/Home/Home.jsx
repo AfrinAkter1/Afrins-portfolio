@@ -1,10 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
-import {BiCode, BiSolidHomeHeart, BiUser} from "react-icons/bi"
+import {BiCode, BiMenu, BiSolidHomeHeart, BiUser} from "react-icons/bi"
 import {GiSkills} from "react-icons/gi"
 import {MdContactPage} from "react-icons/md"
 import  { useState } from 'react'
 import DayNightToggle from 'react-day-and-night-toggle'
 import './home.css'
+import Footer from "../Footer";
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -29,19 +30,41 @@ const Home = () => {
   }
 
     return (
-        <div>
+        <div id="relative" className=" h-full w-full">
            
             <div className="drawer lg:drawer-open">
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-  <div className="drawer-content flex flex-col items-center justify-center">
+  <div className="drawer-content flex flex-col items-center justify-center h-full">
     {/* Page content here */}
     <Outlet></Outlet>
-    <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+    <Footer></Footer>
+<div className="wrapper">
+
+
+    <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      </div>
+
+
+    <label htmlFor="my-drawer-2" className="btn bg-orange-800 drawer-button lg:hidden "><BiMenu className="text-2xl"></BiMenu></label>
   
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-    <ul className="menu p-4  h-full bg-purple-800 bg-opacity-20 text-white">
+    <ul className="menu p-4  lg:h-full  bg-purple-800 bg-opacity-20 text-white">
       {/* Sidebar content here */}
       <DayNightToggle className="my-5" size={30} onChange={handleChangeTheme} checked={isDarkMode} />
       <li className="font-bold"><NavLink  to='/' className={({ isActive}) =>
@@ -49,6 +72,7 @@ const Home = () => {
                         && "bg-orange-800"
                        
                     }><BiSolidHomeHeart size={23}></BiSolidHomeHeart>Home</NavLink></li>
+      
       <li className="font-bold"><NavLink  to='/about' className={({ isActive}) =>
                       isActive
                         && "bg-orange-800"
@@ -69,7 +93,14 @@ const Home = () => {
                         && "bg-orange-800"
                        
                     }><MdContactPage size={23}></MdContactPage>Contact me</NavLink></li>
+                 
     </ul>
+
+
+
+    
+
+
   
   </div>
 </div>

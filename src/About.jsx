@@ -9,7 +9,7 @@ const About = () => {
    
    
     return (
-        <div className="md:flex  gap-10 mx-40">
+        <div id="about" className="lg:flex  lg:gap-10 mx-40">
            <div>
             <h3 className="text-2xl  my-4"><i>About Me</i></h3>
             <p className="text-orange-600 text-3xl font-bold">I am available for your Project</p>
@@ -20,7 +20,7 @@ I invest a significant amount of time in staying up-to-date with the latest tren
 className='btn text-white bg-orange-800' ><BiDownload className="text-xl"></BiDownload> Download Resume</a>
            </div>
            <div>
-            <img className="h-80 w-[900px] rounded  shadow-lg shadow-gray-600" src="https://i.ibb.co/jJm3x18/IMG-20230701-110126.jpg" alt="" />
+            <img className="h-80 lg:w-[900px] rounded  shadow-lg shadow-gray-600" src="https://i.ibb.co/jJm3x18/IMG-20230701-110126.jpg" alt="" />
            </div>
         </div>
     );

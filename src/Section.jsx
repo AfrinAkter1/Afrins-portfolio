@@ -1,10 +1,13 @@
+
 import Banner from "./Banner";
 
 
 const Section = () => {
     return (
-        <div>
+        <div className="">
            <Banner></Banner> 
+          
+           
         </div>
     );
 };
